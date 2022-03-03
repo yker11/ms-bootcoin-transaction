@@ -45,4 +45,14 @@ public class BootCoinTransactionServiceImpl implements IBootCoinTransactionServi
     public Mono<BootCoinTransaction> getBootCoinTransaction(BootCoinTransactionDto bootCoinTransactionDto) {
         return Mono.just(objectMapper.convertValue(bootCoinTransactionDto, BootCoinTransaction.class));
     }
+
+    @Override
+    public BootCoinTransactionDto getBootTransactionDto(BootCoinTransaction bootCoinTransaction) {
+        return null;
+    }
+
+    @Override
+    public BootCoinTransaction getBootTransaction(BootCoinTransactionDto bootCoinTransactionDto) {
+        return null;
+    }
 }

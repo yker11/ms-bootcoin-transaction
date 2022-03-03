@@ -1,5 +1,3 @@
-server:
-  port: 8099
 spring:
   application:
     name: ms-bootcoin-transaction
@@ -20,8 +18,8 @@ custom:
     topic-name-bootcoin-account: topic-bootcoin-account
     group-id: group-id
 
-application:
-  external:
-    comments:
-      url: http://localhost:8095
-      path: /ms-bootcoin-account
+#application:
+#  external:
+#    comments:
+#      url: http://localhost:8095
+#      path: /ms-bootcoin-account
