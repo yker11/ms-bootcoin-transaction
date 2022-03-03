@@ -1,0 +1,27 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: ms-bootcoin-transaction
+  cloud:
+    config:
+      uri: http://localhost:8090
+      username: nttdata
+      password: nttd4t4
+  data:
+    mongodb:
+      uri: mongodb+srv://admin11:admin11@yker11.s79yf.mongodb.net/db_bank?retryWrites=true&w=majority
+
+custom:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic-name-transaction: topic-bootcoin-transaction
+
+    topic-name-bootcoin-account: topic-bootcoin-account
+    group-id: group-id
+
+application:
+  external:
+    comments:
+      url: http://localhost:8095
+      path: /ms-bootcoin-account
